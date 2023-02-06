@@ -1,0 +1,50 @@
+[
+  {
+    "name": "iphone 14 pro",
+    "price": 146666,
+    "featured": true,
+    "company": "apple"
+  },
+  {
+    "name": "iphone 13 pro",
+    "price": 128999,
+    "featured": true,
+    "company": "apple"
+  },
+  {
+    "name": "iphone 14",
+    "price": 99999,
+    "featured": false,
+    "company": "apple"
+  },
+  {
+    "name": "iphone 13",
+    "price": 79999,
+    "featured": false,
+    "company": "apple"
+  },
+  {
+    "name": "samsung s22 ultra",
+    "price": 134444,
+    "featured": false,
+    "company": "samsung"
+  },
+  {
+    "name": "samsung s22",
+    "price": 103555,
+    "featured": false,
+    "company": "samsung"
+  },
+  {
+    "name": "samsung s21 pro",
+    "price": 118888,
+    "featured": false,
+    "company": "samsung"
+  },
+  {
+    "name": "oneplus 10 pro",
+    "price": 66666,
+    "featured": false,
+    "company": "oneplus"
+  }
+]
