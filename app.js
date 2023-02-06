@@ -3,12 +3,14 @@ const app = express()
 const connectDB = require("./db/connect")
 const Product = require("./models/product")
 require('dotenv').config()
+const cors = require("cors")
 
 const PORT = process.env.PORT || 5000
 const uri = process.env.MONGODB_URI
 
 // middleware to grab the json object from user
 app.use(express.json())
+app.use(cors())
 
 const productsRoute = require("./routes/products")
 
