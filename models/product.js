@@ -23,6 +23,7 @@ const productSchema = new mongoose.Schema({
     },
     company: {
         type: String,
+        required: [true, "Company Must Be Provided"],
         // only mentioned or selected companies should be here
         enum: {
             values: ["apple", "samsung", "oneplus"],
