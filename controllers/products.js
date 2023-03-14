@@ -14,6 +14,7 @@ const getAllProducts = async (req, res) => {
         queryObj.featured = featured
     }
 
+    // This is for finding products using names as query parameter
     let defaultQuery = Product.find(queryObj)
     if (sort) {
         const sortFix = sort.split(",").join(" ")
@@ -24,11 +25,11 @@ const getAllProducts = async (req, res) => {
         defaultQuery = defaultQuery.select(selectFix)
     }
 
-    const page = Number(req.query.page) || 1
-    const limit = Number(req.query.limit) || 3
-    let skip = (page - 1) * limit
+    // const page = Number(req.query.page) || 1
+    // const limit = Number(req.query.limit) || 6
+    // let skip = (page - 1) * limit
     //keep it default page 1 and limit 3
-    defaultQuery = defaultQuery.skip(skip).limit(limit)
+    // defaultQuery = defaultQuery.skip(skip).limit(limit)
 
     // we running the query here only. none above.
     const allProducts = await defaultQuery
