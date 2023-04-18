@@ -22,7 +22,7 @@ const getUnmappedEquips = async (req, res) => {
 
     // let defaultQuery = UnmappedEquip.find(req.query)
     const allUnmappedEq = await UnmappedEquip.find(req.query)
-    res.status(200).json({ allUnmappedEq })
+    res.status(200).json(allUnmappedEq)
 }
 
 module.exports = { getUnmappedEquips }
